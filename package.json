@@ -1,0 +1,22 @@
+{
+  "name": "swarmcity-shortcode",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --exit && node utils/removeDirContents || node utils/removeDirContents",
+    "start": "node server"
+  },
+  "repository": "git@github.com:dapplion/SwarmCityShortcode.git",
+  "author": "swarmcity",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "level": "^4.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "mocha": "^6.0.0"
+  }
+}
