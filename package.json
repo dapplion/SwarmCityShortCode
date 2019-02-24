@@ -6,7 +6,6 @@
     "test": "mocha --exit && node utils/removeDirContents || node utils/removeDirContents",
     "start": "node server"
   },
-  "repository": "git@github.com:dapplion/SwarmCityShortcode.git",
   "author": "swarmcity",
   "license": "MIT",
   "dependencies": {

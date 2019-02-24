@@ -46,12 +46,7 @@ const cleanShortcodes = require("./utils/cleanShortcodes")(db, options);
 const app = express();
 app.use(bodyParser.text({ limit: "4kb" })); // Incoming req parser, built-in middleware
 
-app.get(
-  "/",
-  wrapErrors(async (_, res) => {
-    res.send("<h1>Swarm City shortcode service</h1>");
-  })
-);
+app.get("/", (_, res) => res.send("Swarm City shortcode service"));
 
 app.get(
   "/:shortcode",
